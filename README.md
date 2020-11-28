@@ -1,4 +1,9 @@
 # auto-commit
+
+<p align="right">
+  <img src="./Animated_internal_gear.gif">
+</p>
+
 Dev Space | Simple Script for automate Commits to your own Git Repo | Supports Linux / Unix
 
 # Update:
