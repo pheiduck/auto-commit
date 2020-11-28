@@ -1,5 +1,5 @@
 # auto-commit
-Dev Space | Simple Script for automate Commits to your own Git Repo
+Dev Space | Simple Script for automate Commits to your own Git Repo | Supports Linux / Unix
 
 # Known Issues:
 
