@@ -1,7 +1,7 @@
 # auto-commit
 
 <p align="right">
-  <img src="./Animated_internal_gear.gif" width="40" height="40">
+  <img src="./Animated_internal_gear.gif" width="80" height="80">
 </p>
 
 Dev Space | Simple Script for automate Commits to your own Git Repo | Supports Linux / Unix
