@@ -3,7 +3,7 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 
 # Update:
 
-Script run in a loop after it was executed
+Script run in a loop 10 times after it was executed
 
 
 # Known Issues:
