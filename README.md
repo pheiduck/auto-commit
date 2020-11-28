@@ -1,4 +1,6 @@
+<p align="left">
 # auto-commit
+</p>
 <p align="right">
   <img src="./Animated_internal_gear.gif" width="80" height="80">
 </p>
