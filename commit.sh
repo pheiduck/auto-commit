@@ -1,8 +1,8 @@
 #!/bin/sh
 
-for x in {0..100} ; do
-    if (( x % 10 == 0 ))
-    then
+for (( ; ; ))
+do
+
         cd $(pwd)
 git add --all
 timestamp() {
@@ -12,6 +12,9 @@ timestamp() {
 git commit -am "Regular auto-commit $(timestamp)"
 
 ping -c5 www.github.com && git push origin --all || echo "not connected"
-    fi
     sleep 1
+    if (disaster-cndition)
+	then
+	break
+    fi
 done
