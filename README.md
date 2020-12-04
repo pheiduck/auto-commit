@@ -10,10 +10,11 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 
 # Update:
 
-Script run in a loop 10 times after it was executed
+- Script run infinity loop
 
 
 # Known Issues:
 
 - Not a real auto-commit at the moment > manual executing
 - script cd goes in current Working Directory, make sure you are in your git Repo directory
+- if section is not done "disaster-condition" is not defined
