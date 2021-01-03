@@ -17,7 +17,6 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 
 - Not a real auto-commit
 - script cd goes in current Working Directory
-- if section is not done "disaster-condition" is not defined
 - Symlink will be not set at the first time
 
 # Workarounds:
