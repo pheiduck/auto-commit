@@ -20,7 +20,7 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 - if section is not done "disaster-condition" is not defined
 - Symlink will be not set at the first time
 
-# Workarounds
+# Workarounds:
 
 - Execute the script once
 - Make sure you are in the git repo, where you want to use the script
