@@ -13,7 +13,7 @@ git commit -am "Regular auto-commit $(timestamp)"
 
 ping -c5 www.github.com && git push origin --all || echo "not connected"
     sleep 1
-    if (not connected = true)
+    if (echo "not connected" = true)
 	then
 	break
     fi
