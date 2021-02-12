@@ -11,7 +11,7 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 # Update:
 
 - Script run infinity loop
-
+- Release Draft: do git clone
 
 # Known Issues:
 
