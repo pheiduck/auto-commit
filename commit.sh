@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Clone Repo first change it to your Repo
+git clone https://github.com/username/reponame.git
+cd reponame
+
 for (( ; ; ))
 do
 
