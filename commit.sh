@@ -1,5 +1,19 @@
 #!/bin/sh
 
+# Clone Repo first change it to your Repo
+
+echo "Your github username: "
+read -r
+username=$REPLY
+
+echo "Your github reponame: "
+read -r
+reponame=$REPLY
+
+
+git clone https://github.com/$username/$reponame.git
+cd $reponame
+
 for (( ; ; ))
 do
 
