@@ -13,6 +13,7 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 - Script run infinity loop
 - interactive script ask for github username and reponame
 - Release Draft: do git clone
+- Signing Commits (Testing not include in 1.3.1)
 
 # Known Issues:
 
