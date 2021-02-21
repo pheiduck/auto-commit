@@ -14,6 +14,7 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 - interactive script ask for github username and reponame
 - Release Draft: do git clone
 - Signing Commits (Testing not include in 1.3.1)
+adds *Signed-off-by:*
 
 # Known Issues:
 
@@ -21,7 +22,6 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 - script cd goes in current Working Directory
 - Symlink will be not set at the first time
 - if section is not done "disaster-condition" is not defined
-- Signing is in testing not working correctly maybe
 
 # Workarounds:
 
