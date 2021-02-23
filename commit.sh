@@ -2,7 +2,7 @@
 
 # Create Symlink first
 
-ln -s commit.sh /bin/auto-commit
+#ln -s commit.sh /bin/auto-commit
 
 # Clone Repo first change it to your Repo
 
@@ -31,7 +31,7 @@ git commit -sam "Regular auto-commit $(timestamp)"
 
 ping -c5 www.github.com && git push origin --all || echo "not connected"
     sleep 1
-    if (echo)
+    if (disaster-condition)
 	then
 	break
     fi
