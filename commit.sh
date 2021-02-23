@@ -27,7 +27,7 @@ git commit -sam "Regular auto-commit $(timestamp)"
 
 ping -c5 www.github.com && git push origin --all || echo "not connected"
     sleep 1
-    if (disaster-condition)
+    if (echo)
 	then
 	break
     fi
