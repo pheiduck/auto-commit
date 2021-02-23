@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Create Symlink first
+# Create Symlink first needs sudo btw :P
 
 ln -s commit.sh /bin/auto-commit
 
