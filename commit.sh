@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Create Symlink first
+
+ln -s commit.sh /bin/auto-commit
+
 # Clone Repo first change it to your Repo
 
 echo "Your github username: "
