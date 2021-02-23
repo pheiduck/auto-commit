@@ -18,6 +18,8 @@ reponame=$REPLY
 git clone https://github.com/$username/$reponame.git
 cd $reponame
 
+# Now auto-commit is running...
+
 for (( ; ; ))
 do
 
