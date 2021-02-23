@@ -2,7 +2,7 @@
 
 # Create Symlink first
 
-#ln -s commit.sh /bin/auto-commit
+ln -s commit.sh /bin/auto-commit
 
 # Clone Repo first change it to your Repo
 
