@@ -32,4 +32,4 @@ jobs:
             git clone https://github.com/pheiduck/auto-commit.git
             cd auto-commit
             chmod +x commit.sh
-            echo "pheiduck" | username && echo "auto-commit" | reponame >> ./commit.sh
+            echo "pheiduck" && echo "auto-commit" >> ./commit.sh
