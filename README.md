@@ -28,4 +28,6 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 
 # Video:
 
-- url will be uploaded soon
+https://asciinema.org/a/fyIrtEO9YgAiwNVvigQlk3OH0
+
+
