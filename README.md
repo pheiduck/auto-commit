@@ -28,4 +28,4 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 
 # Video:
 
-- link...
+- url will be uploaded soon
