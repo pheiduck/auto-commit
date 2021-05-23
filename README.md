@@ -25,3 +25,7 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 
 - Execute the script once
 - Make sure you are in the git repo, where you want to use the script
+
+# Video:
+
+- link...
