@@ -33,4 +33,3 @@ jobs:
             cd auto-commit
             chmod +x commit.sh
             echo "pheiduck" && echo "auto-commit" >> ./commit.sh
-            auto-commit
