@@ -2,6 +2,11 @@
 
 # Create Symlink first needs sudo btw :P
 
+if [$(whoami) != 'root']; then
+  echo "Please run with sudo privileges"
+
+else
+
 ln -s commit.sh /bin/auto-commit
 
 # Clone Repo first change it to your Repo
