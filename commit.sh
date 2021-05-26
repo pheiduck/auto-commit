@@ -7,7 +7,7 @@ if [$(whoami) != 'root']; then
 
 else
 
-ln -s commit.sh /bin/auto-commit
+sudo ln -s commit.sh /bin/auto-commit
 
 # Clone Repo first change it to your Repo
 
