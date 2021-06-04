@@ -18,7 +18,6 @@ Dev Space | Simple Script for automate Commits to your own Git Repo | Supports L
 # Known Issues:
 
 - Not a real auto-commit
-- Symlink will be not set at the first time
 - if section is not done "disaster-condition" is not defined
 
 # Workarounds:
