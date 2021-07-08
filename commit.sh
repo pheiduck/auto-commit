@@ -10,18 +10,22 @@ else
 sudo ln -s commit.sh /bin/auto-commit
 fi
 
-# Clone Repo first change it to your Repo
+# Clone Repo first the script asks for giturl, username and reponame
 
-echo "Your github username: "
+echo "URL Type github or gitlab: "
+read -r
+url=$REPLY
+
+echo "Your username / projectname: "
 read -r
 username=$REPLY
 
-echo "Your github reponame: "
+echo "Your reponame: "
 read -r
 reponame=$REPLY
 
 
-git clone https://github.com/$username/$reponame.git
+git clone https://$url/$username/$reponame.git
 cd $reponame
 
 # Now auto-commit is running...
@@ -37,7 +41,7 @@ timestamp() {
 
 git commit -sam "Regular auto-commit $(timestamp)"
 
-ping -c5 www.github.com && git push origin --all || echo "not connected"
+ping -c5 www.$url && git push origin --all || echo "not connected"
     sleep 1
     if (disaster-condition)
 	then
