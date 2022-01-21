@@ -41,10 +41,10 @@ timestamp() {
 
 git commit -sam "Regular auto-commit $(timestamp)"
 
-ping -c5 www.$url && git push origin --all || echo "not connected"
-    sleep 1
-    if (disaster-condition)
-	then
-	break
-    fi
+check=ping -c5 www.$url ;
+if [ "$check" = 0 ] then
+	git push origin --all
+else
+	echo "not connected"
+	exit 0
 done
