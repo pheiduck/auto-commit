@@ -47,4 +47,5 @@ if [ "$check" = 0 ] then
 else
 	echo "not connected"
 	exit 0
+fi
 done
