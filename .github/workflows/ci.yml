@@ -14,8 +14,7 @@ jobs:
           repo=auto-commit
           git config --global user.name "Auto Commit"
           git config --global user.email "ac@$url"
-            git clone https://$url/$username/$repo.git
-            cd $repo
-            chmod +x commit.sh
-            echo "$username" && echo "$repo" >> ./commit.sh
-            
+          git clone https://$url/$username/$repo.git
+          cd $repo
+          chmod +x commit.sh
+          echo "$username" && echo "$repo" >> ./commit.sh && sudo ./commit.sh
