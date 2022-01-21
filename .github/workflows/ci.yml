@@ -7,6 +7,8 @@ jobs:
       - uses: actions/checkout@main
       - name: Test shell script
         run: |
+          sudo apt update
+          sudo apt dist-upgrade -y
           url=github.com
           username=pheiduck
           repo=auto-commit
