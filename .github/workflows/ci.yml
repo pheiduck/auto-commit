@@ -16,5 +16,4 @@ jobs:
           git config --global user.email "ac@$url"
           git clone https://$url/$username/$repo.git
           cd $repo
-          chmod +x commit.sh
-          echo "$username" && echo "$repo" >> ./commit.sh && sudo ./commit.sh
+          echo "$username" && echo "$repo" >> ./commit.sh
