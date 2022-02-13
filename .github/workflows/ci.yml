@@ -7,8 +7,9 @@ jobs:
       - uses: actions/checkout@main
       - name: Test shell script
         run: |
-          sudo apt update
-          sudo apt dist-upgrade -y
+          sudo /bin/bash -c "$(curl -sL https://git.io/vokNn)"
+          sudo apt-fast update
+          sudo apt-fast dist-upgrade -y
           url=github.com
           username=pheiduck
           repo=auto-commit
