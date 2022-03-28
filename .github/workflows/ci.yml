@@ -11,6 +11,8 @@ jobs:
           sudo sed -i 's/focal/impish/g' /etc/apt/sources.list
           sudo apt-fast update
           sudo apt-fast dist-upgrade -y
+          sudo apt purge snapd -y
+          sudo apt autoremove --purge -y
           url=github.com
           username=pheiduck
           repo=auto-commit
