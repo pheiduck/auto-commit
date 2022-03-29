@@ -1,26 +1,24 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+  testing-script:
     docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+      - image: manjarolinux/base:latest
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "Testing Script"
+          command: |
+            url=github.com
+            username=pheiduck
+            repo=auto-commit
+            git config --global user.name "Auto Commit"
+            git config --global user.email "ac@$url"
+            git clone https://$url/$username/$repo.git
+            cd $repo
+            echo "$username" && echo "$repo" >> ./commit.sh
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  testing-script-workflow:
     jobs:
-      - say-hello
+      - testing-script
