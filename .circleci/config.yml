@@ -1,0 +1,24 @@
+version: 2.1
+
+jobs:
+  testing-script:
+    docker:
+      - image: manjarolinux/base:latest
+    steps:
+      - checkout
+      - run:
+          name: "Testing Script"
+          command: |
+            url=github.com
+            username=pheiduck
+            repo=auto-commit
+            git config --global user.name "Auto Commit"
+            git config --global user.email "ac@$url"
+            git clone https://$url/$username/$repo.git
+            cd $repo
+            echo "$username" && echo "$repo" >> ./commit.sh
+
+workflows:
+  testing-script-workflow:
+    jobs:
+      - testing-script
