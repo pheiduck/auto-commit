@@ -8,7 +8,6 @@ jobs:
       - name: Test shell script
         run: |
           sudo /bin/bash -c "$(curl -sL https://git.io/vokNn)"
-          sudo sed -i 's/focal/impish/g' /etc/apt/sources.list
           sudo apt-fast update
           sudo apt-fast dist-upgrade -y
           sudo apt purge snapd -y
