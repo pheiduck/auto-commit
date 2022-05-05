@@ -7,7 +7,6 @@ jobs:
       - uses: actions/checkout@main
       - name: Test shell script
         run: |
-          sudo /bin/bash -c "$(curl -sL https://git.io/vokNn)"
           sudo apt-fast update
           sudo apt-fast dist-upgrade -y
           sudo apt purge snapd -y
