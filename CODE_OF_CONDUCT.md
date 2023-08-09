@@ -1,3 +1,4 @@
+<!-- Copyright (c) Philip H. -->
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge

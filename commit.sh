@@ -1,3 +1,4 @@
+#Copyright (c) Philip H.
 #!/bin/sh
 
 # Create Symlink first needs sudo btw :P

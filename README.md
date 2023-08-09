@@ -1,3 +1,4 @@
+<!-- Copyright (c) Philip H. -->
 <p align="left">
 <h1> auto-commit </h1>
 </p>
