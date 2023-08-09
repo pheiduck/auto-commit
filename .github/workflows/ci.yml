@@ -7,10 +7,6 @@ jobs:
       - uses: actions/checkout@main
       - name: Test shell script
         run: |
-          sudo apt-fast update
-          sudo apt-fast dist-upgrade -y
-          sudo apt purge snapd -y
-          sudo apt autoremove --purge -y
           url=github.com
           username=pheiduck
           repo=auto-commit
