@@ -46,6 +46,6 @@ ping -c5 www.$url && git push origin --all || echo "not connected"
     sleep 1
     if (disaster-condition)
 	then
-	break
+	exit 1
     fi
 done
