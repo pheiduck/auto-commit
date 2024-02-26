@@ -5,7 +5,7 @@
 
 if [ $(whoami) != 'root' ]; then
   echo "Please run with sudo privileges"
-  exit 0
+  exit 1
 else
 
 sudo ln -s commit.sh /bin/auto-commit
