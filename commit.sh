@@ -8,7 +8,8 @@ if [ $(whoami) != 'root' ]; then
   exit 1
 else
 
-sudo ln -s commit.sh /bin/auto-commit
+  echo "[OK]"
+
 fi
 
 # Clone Repo first the script asks for giturl, username and reponame
@@ -42,7 +43,7 @@ timestamp() {
 
 git commit -sam "Regular auto-commit $(timestamp)"
 
-ping -c5 www.$url && git push origin --all || echo "not connected"
+ping -c5 www.$url && git push || exit 1
     sleep 1
     if (disaster-condition)
 	then
