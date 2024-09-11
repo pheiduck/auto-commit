@@ -21,33 +21,23 @@ jobs:
           git config --global user.name "Auto Commit"
           git config --global user.email "auto-commit@github.com"
 
-      - name: Clone repository
+      - name: Modify commit.sh
         run: |
           set -e  # Stop script on any error
-          url="github.com"              # URL is now correctly set as "github.com"
-          username="pheiduck"           # Replace with your actual username
-          repo="auto-commit"            # Replace with your actual repo name
-          
-          # Correct Git clone command with properly formed URL
-          git clone https://$url/$username/$repo.git
-          cd $repo
-          
-          # Optional: Print variables for debugging
-          echo "Username: $username"
-          echo "Repo: $repo"
+          username="pheiduck"        # Your GitHub username
+          repo="auto-commit"         # Your repository name
 
-      - name: Modify commit.sh and push changes
-        run: |
-          # Add some content to commit.sh (example)
+          # Modify the commit.sh file (append content)
           echo "$username" && echo "$repo" >> ./commit.sh
 
-          # Stage the file
+          # Stage the changes
           git add commit.sh
           
-          # Commit and push changes (using the GitHub Actions token for authentication)
+          # Commit the changes locally
           git commit -m "Auto-update commit.sh in CI"
-          git push https://x-access-token:${{ secrets.CI_TOKEN }}@$url/$username/$repo.git
-
+          
+          # NOTE: No git push is performed, changes remain local to this workflow
+          
       - name: Run Shell Script Tests
         run: |
-          ./commit.sh  # Run the modified commit.sh to ensure it's working
+          ./commit.sh  # Test the modified commit.sh file
