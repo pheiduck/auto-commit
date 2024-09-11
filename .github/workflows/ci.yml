@@ -24,9 +24,11 @@ jobs:
       - name: Clone repository
         run: |
           set -e  # Stop script on any error
-          url=github.com
-          username=pheiduck
-          repo=auto-commit
+          url="github.com"              # URL is now correctly set as "github.com"
+          username="pheiduck"           # Replace with your actual username
+          repo="auto-commit"            # Replace with your actual repo name
+          
+          # Correct Git clone command with properly formed URL
           git clone https://$url/$username/$repo.git
           cd $repo
           
