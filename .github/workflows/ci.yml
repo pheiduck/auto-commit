@@ -44,7 +44,7 @@ jobs:
           
           # Commit and push changes (using the GitHub Actions token for authentication)
           git commit -m "Auto-update commit.sh in CI"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@$url/$username/$repo.git
+          git push https://x-access-token:${{ secrets.CI_TOKEN }}@$url/$username/$repo.git
 
       - name: Run Shell Script Tests
         run: |
