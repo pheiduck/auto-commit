@@ -1,17 +1,51 @@
 name: CI
-on: [push]
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@main
-      - name: Test shell script
+      - name: Checkout repository
+        uses: actions/checkout@main
+
+      - name: Configure Git User
         run: |
+          git config --global user.name "Auto Commit"
+          git config --global user.email "auto-commit@github.com"
+
+      - name: Clone repository
+        run: |
+          set -e  # Stop script on any error
           url=github.com
           username=pheiduck
           repo=auto-commit
-          git config --global user.name "Auto Commit"
-          git config --global user.email "ac@$url"
           git clone https://$url/$username/$repo.git
           cd $repo
+          
+          # Optional: Print variables for debugging
+          echo "Username: $username"
+          echo "Repo: $repo"
+
+      - name: Modify commit.sh and push changes
+        run: |
+          # Add some content to commit.sh (example)
           echo "$username" && echo "$repo" >> ./commit.sh
+
+          # Stage the file
+          git add commit.sh
+          
+          # Commit and push changes (using the GitHub Actions token for authentication)
+          git commit -m "Auto-update commit.sh in CI"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@$url/$username/$repo.git
+
+      - name: Run Shell Script Tests
+        run: |
+          ./commit.sh  # Run the modified commit.sh to ensure it's working
