@@ -35,7 +35,7 @@ jobs:
           git add commit.sh
           
           # Commit the changes locally
-          git commit -m "Auto-update commit.sh in CI"
+          git commit -m "Auto-update commit.sh in CI" || true
           
           # NOTE: No git push is performed, changes remain local to this workflow
           
