@@ -29,7 +29,7 @@ jobs:
           reponame="auto-commit"         # Your repository name
 
           # Modify the commit.sh file (append content)
-          echo "$url" && "$username" && echo "$reponame" >> ./commit.sh
+          echo "$url" && echo "$username" && echo "$reponame" >> ./commit.sh
 
           # Stage the changes
           git add commit.sh
