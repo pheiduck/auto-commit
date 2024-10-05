@@ -24,11 +24,12 @@ jobs:
       - name: Modify commit.sh && Run Shell Script Tests
         run: |
           set -e  # Stop script on any error
+          url="github.com"       # Your Hostname
           username="pheiduck"        # Your GitHub username
-          repo="auto-commit"         # Your repository name
+          reponame="auto-commit"         # Your repository name
 
           # Modify the commit.sh file (append content)
-          echo "$username" && echo "$repo" >> ./commit.sh
+          echo "$url" && "$username" && echo "$reponame" >> ./commit.sh
 
           # Stage the changes
           git add commit.sh
