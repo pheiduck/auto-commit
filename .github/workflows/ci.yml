@@ -40,4 +40,4 @@ jobs:
           
       - name: Run Shell Script Tests
         run: |
-          ./commit.sh  # Test the modified commit.sh file
+          sudo ./commit.sh  # Test the modified commit.sh file
