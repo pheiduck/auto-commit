@@ -21,7 +21,7 @@ jobs:
           git config --global user.name "Auto Commit"
           git config --global user.email "auto-commit@github.com"
 
-      - name: Modify commit.sh
+      - name: Modify commit.sh && Run Shell Script Tests
         run: |
           set -e  # Stop script on any error
           username="pheiduck"        # Your GitHub username
@@ -38,6 +38,4 @@ jobs:
           
           # NOTE: No git push is performed, changes remain local to this workflow
           
-      - name: Run Shell Script Tests
-        run: |
           sudo ./commit.sh  # Test the modified commit.sh file
